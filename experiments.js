@@ -60,6 +60,9 @@ x++;
 ++x;
 console.log(x);
 
+//this variable is to break line 
+let linebreak1 = '\n';
+
 // for loops in javaScript
 let friends = 0;
 for (let i = 0; i <= 10; i++) {
@@ -78,11 +81,49 @@ for (let i = 0; i <= repeat; i++) {
 console.log(answer.length);
 // this above program is like procedural programming, which is tedious work
 
-//another sample program by using functions
+//another sample program by using function (addTwo) which can be reused all over again, but this program is not necessary useful
 
 function addTwo(number) {
   return number + 2;
 }
-
 const finalAnswer = addTwo(5);
 console.log(finalAnswer);
+console.log(addTwo(100));
+console.log(linebreak1);
+
+// another program example made via function
+
+function greet(firstName, lastName, honorific, greeting) {
+  return `${greeting} ${honorific} ${lastName}! I’m extremely pleased you could join us, ${firstName}! I hope you enjoy your stay, ${honorific} ${lastName}.`;
+}
+
+console.log(greet("Brian", "Holt", "Lord", "Salutations"));
+console.log(greet("Jack", "Sparrow", "Captain", "A-hoy"));
+console.log(linebreak1);
+
+//another function example with custom variable
+
+const myHomeCity = "Salt Lake City";
+const myHomeState = "Utah";
+const myHomeCountry = "USA";
+
+function logOutYourHome(city, state, country) {
+  console.log(`You are from ${city}, ${state} ${country}.`);
+}
+
+logOutYourHome(myHomeCity, myHomeState, myHomeCountry);
+console.log(linebreak1);
+
+// use of scope in functions
+
+function addFive(number) {
+  const someVariable = "you can't see me outside this function";
+  // this is inside scope
+  console.log(someVariable);
+  return number + 5;
+}
+addFive(10);
+console.log(addFive(10));
+
+// this isnot going to work, since it's outside scope
+// console.log(someVariable);
