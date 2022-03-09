@@ -50,3 +50,39 @@ while (friendsAtYourParty1 < 10) {
   friendsAtYourParty1 = friendsAtYourParty1 + 1;
 }
 console.log(friendsAtYourParty1);
+
+// there are many ways to add/subtract or increment/decrement
+
+let x=0;
+x=x+1;
+x+=1;
+x++;
+++x;
+console.log(x);
+
+// for loops in javaScript
+let friends = 0;
+for (let i = 0; i <= 10; i++) {
+  friends++;
+}
+console.log(friends);
+
+// sample program to print string 'a' 50 times
+
+const character='a';
+const repeat = 50;
+let answer= ``;
+for (let i = 0; i <= repeat; i++) {
+  answer+= character;
+}
+console.log(answer.length);
+// this above program is like procedural programming, which is tedious work
+
+//another sample program by using functions
+
+function addTwo(number) {
+  return number + 2;
+}
+
+const finalAnswer = addTwo(5);
+console.log(finalAnswer);
