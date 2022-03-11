@@ -277,3 +277,23 @@ const primeNumbers = [1, 2, 3, 5, 7, 11, 13, 17];
 console.log(primeNumbers.length); // .length is a property
 console.log(primeNumbers.join(" | "));// join is a function (" | ") this is what we give join function, its called delimeter
 console.log(linebreak1);
+
+//if I want to add an element to the array after I've created. Use push!
+const courses = [
+  { teacher: "Kyle Simpson", course: "JS Function Lite" },
+  { teacher: "Sarah Drasner", course: "Intro to Vue" },
+  { teacher: "Brian Holt", course: "Complete Intro to React v3" },
+  { teacher: "Steve Kinney", course: "State Management" }
+];
+
+courses.push({ teacher: "Sean Larkinn", course: "Webpack" });
+console.log(courses);
+courses[2] = { teacher: "Brian Holt", course: "Did Change in Array" };
+console.log(courses);
+courses[2].course = "another way of changing object in array";//since courses[2] is an object
+console.log(courses);
+console.log(linebreak1);
+const briansCourse = courses[2];
+briansCourse.course= "yet changed the name again, another method";
+console.log(courses[2]);
+console.log(linebreak1);
