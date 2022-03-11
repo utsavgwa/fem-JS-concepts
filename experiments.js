@@ -297,3 +297,28 @@ const briansCourse = courses[2];
 briansCourse.course= "yet changed the name again, another method";
 console.log(courses[2]);
 console.log(linebreak1);
+
+// looping in array
+
+const cities = [
+  "Seattle",
+  "San Francisco",
+  "Salt Lake City",
+  "Amsterdam",
+  "Hong Kong"
+];
+
+// method 1
+for (let i = 0; i < cities.length; i++) {
+  //const city = cities[i];
+  //console.log(city.toUpperCase());
+  console.log(cities[i].toUpperCase());
+
+}
+console.log(linebreak1);
+
+// method 2 --> it is what a part of functional programming
+
+cities.forEach(function(city) {//forEach function builtin into arrays
+  console.log(city.toLowerCase());
+});
