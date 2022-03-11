@@ -245,6 +245,28 @@ ${this.location.city}, ${this.location.state} ${this.location.zipCode}
 ${this.location.country}`;
   }
 };
+/*
+better method is to pass these things as variables instead of relying on this keyword
+function getAddress(person){
+  
+}
+*/
 
 console.log(me2.getAddress());
+console.log(linebreak1);
+
+// ARRAYS -> 
+const daysOfTheWeek = [
+  "Monday",// key is 0, getting that from order implicitly
+  "Tuesday",// key is 1
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+];
+console.log(daysOfTheWeek);
+console.log(daysOfTheWeek[0]);
+console.log(daysOfTheWeek[1]);
+console.log(daysOfTheWeek[6]);
 console.log(linebreak1);
