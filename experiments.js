@@ -163,3 +163,88 @@ console.log(person.name);
 console.log(person["name"]); // same as the line above; definitely prefer using the other one
 
 console.log(person.address.apt);
+console.log(linebreak1);
+
+// example taking all of it together:
+const person1 = {
+  name: "Brian",
+  ageRange: "25-35"
+};
+const person2 = {
+  name: "Jack",
+  ageRange: "65-75"
+};
+
+function suggestMusic(person) {
+  if (person.ageRange === "25-35") {
+    console.log("We think you'll like Daft Punk your crazy millenial.");
+  } else if (person.ageRange === "65-75") {
+    console.log(
+      "You're obviously going to like Johnny Cash. He walks the line."
+    );
+  } else {
+    console.log(
+      "Uh, maybe try David Bowie? Everyone likes David Bowie, right?"
+    );
+  }
+}
+
+suggestMusic(person1);
+suggestMusic(person2);
+console.log(linebreak1);
+
+// Objects can even have their functions
+
+const dog = {// here dog is an object
+  name: "dog",
+  speak() {   // speak is a method, a function, there is paranthesis at last
+    console.log("woof woof");
+  }
+};
+
+dog.speak();// called the function here
+console.log(linebreak1);
+
+// Objects can as well have nested objects inside of them
+
+const me = {
+  name: {
+    first: "Brian",
+    last: "Holt"
+  },
+  location: {
+    city: "Seattle",
+    state: "WA",  
+    country: "USA"
+  }
+};
+
+console.log(me);
+console.log(me.location.city);
+console.log(linebreak1);
+
+// CONTEXT or suffice to say this keyword
+
+const me2 = {
+  name: {
+    first: "Brian",
+    last: "Holt"
+  },
+  location: {
+    streetNumber: 500,
+    street: "Fakestreet",
+    city: "Seattle",
+    state: "WA",
+    zipCode: 55555,
+    country: "USA"
+  },
+  getAddress() {
+    return `${this.name.first} ${this.name.last}
+${this.location.streetNumber} ${this.location.street}
+${this.location.city}, ${this.location.state} ${this.location.zipCode}
+${this.location.country}`;
+  }
+};
+
+console.log(me2.getAddress());
+console.log(linebreak1);
