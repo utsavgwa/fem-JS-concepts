@@ -270,3 +270,10 @@ console.log(daysOfTheWeek[0]);
 console.log(daysOfTheWeek[1]);
 console.log(daysOfTheWeek[6]);
 console.log(linebreak1);
+
+// inbuilt property  in arrays
+
+const primeNumbers = [1, 2, 3, 5, 7, 11, 13, 17];
+console.log(primeNumbers.length); // .length is a property
+console.log(primeNumbers.join(" | "));// join is a function (" | ") this is what we give join function, its called delimeter
+console.log(linebreak1);
