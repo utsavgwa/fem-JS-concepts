@@ -124,6 +124,25 @@ function addFive(number) {
 }
 addFive(10);
 console.log(addFive(10));
+console.log(linebreak1);
 
-// this isnot going to work, since it's outside scope
+// this is not going to work, since it's outside scope
 // console.log(someVariable);
+
+
+// SOME BUILT IN FUNCTIONS IN javaScript:
+
+
+const sentence2 = "ThIs HaS wEiRd CaSiNg On It";
+console.log(sentence2.toLowerCase());
+
+const wep ="blah blahblah";
+console.log(wep.toUpperCase());
+
+// math object is full of different math methods
+
+console.log(Math.round(5.1));
+
+// string.substr(indexToStart, howManyCharactersToInclude) to return part of a string
+const name = "Brian Holt";
+console.log(name.substr(6, 3));
