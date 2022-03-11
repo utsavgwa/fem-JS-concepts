@@ -1,6 +1,5 @@
 // we use slash slash to comment things out in javaScript
 
-
 /*const monthlyRent = 500;
 
 const yearlyRent = monthlyRent * 12;
@@ -144,5 +143,23 @@ console.log(wep.toUpperCase());
 console.log(Math.round(5.1));
 
 // string.substr(indexToStart, howManyCharactersToInclude) to return part of a string
-const name = "Brian Holt";
-console.log(name.substr(6, 3));
+const name1 = "Brian Holt";
+console.log(name1.substr(6, 3));
+console.log(linebreak1);
+
+// objects in javaScript
+
+const person = {
+  name: "Brian Holt",
+  city: "Seattle",
+  state: "WA",
+  address: {            //<-- here created an object within an object
+    street: "1234 Alley",
+    apt: "123"
+  }
+};
+console.log(person);
+console.log(person.name);
+console.log(person["name"]); // same as the line above; definitely prefer using the other one
+
+console.log(person.address.apt);
