@@ -300,7 +300,7 @@ console.log(linebreak1);
 
 // looping in array
 
-const cities = [
+const cities = [ // cities is an object here
   "Seattle",
   "San Francisco",
   "Salt Lake City",
