@@ -322,3 +322,7 @@ console.log(linebreak1);
 cities.forEach(function(city) {//forEach function builtin into arrays
   console.log(city.toLowerCase());
 });
+
+console.log(linebreak1);
+
+// NOW, we get to the DOM:
