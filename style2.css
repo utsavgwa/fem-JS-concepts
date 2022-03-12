@@ -3,3 +3,9 @@
   height: 100px;
   background-color: crimson;
 }
+
+.color-box {
+  background-color: limegreen;
+  width: 100px;
+  height: 100px;
+}

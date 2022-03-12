@@ -26,3 +26,11 @@ const paragraph = document.querySelector('.p-to-copy-to');
 input.addEventListener("keyup", function() {
   paragraph.innerText  = input.value;
 });
+
+// just one more example with change event
+const input1 = document.querySelector('.color-input');
+const paragraph1 = document.querySelector('.color-box');
+
+input1.addEventListener("change", function() {
+  paragraph1.style.backgroundColor  = input1.value;
+});
