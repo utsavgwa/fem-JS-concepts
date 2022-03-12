@@ -12,3 +12,17 @@ for (let i = 0; i < elementsToChange.length; i++) {
   const currentElement = elementsToChange[i];
   currentElement.innerText = "Modified by JavaScript!";
 }
+
+// example using button and evenListener method
+const button = document.querySelector('.event-button');// by querySelector we get hold of the button, and store in jsvariable button
+button.addEventListener('click', function () {
+  alert("Hey there!");
+});
+
+// another example using input tag
+const input = document.querySelector('.input-to-copy');
+const paragraph = document.querySelector('.p-to-copy-to');
+
+input.addEventListener("keyup", function() {
+  paragraph.innerText  = input.value;
+});
