@@ -34,3 +34,17 @@ const paragraph1 = document.querySelector('.color-box');
 input1.addEventListener("change", function() {
   paragraph1.style.backgroundColor  = input1.value;
 });
+
+// EVENT BUBBLING or EVENT DELEGATION:
+// listening for a click on a parent container, if anyof te child button gets fired
+
+document.querySelector('.button-container').addEventListener('click', function(event) {
+  if (event.target.tagName==='BUTTON') { // tagName property returns the tag name of the element.
+    //alert(`You clicked on button ${event.target.innerText}`);
+    event.target.innerText = `You clicked on button ${event.target.innerText}`;
+  }
+  event.stopPropagation();
+});
+
+
+
