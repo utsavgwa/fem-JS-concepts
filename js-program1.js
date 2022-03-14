@@ -46,5 +46,14 @@ document.querySelector('.button-container').addEventListener('click', function(e
   event.stopPropagation();
 });
 
+// Strings, booleans, objects, arrays, numbers, these are different types of types (lol).
+// JavaScript is a language where you don't have to concern yourself a lot with types since it doesn't strictly enforce them (other languages do)
 
+//TYPES in javaScript:
+
+const num = 10;
+const div = document.querySelector(".number-target"); // the div right above this block
+console.log(num, typeof num); // this is a number here
+div.innerText = num;
+console.log(div.innerText, typeof div.innerText); // it's a string here
 
