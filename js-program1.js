@@ -57,3 +57,9 @@ console.log(num, typeof num); // this is a number here
 div.innerText = num;
 console.log(div.innerText, typeof div.innerText); // it's a string here
 
+
+// Now we come to AJAX
+// it has morphed and evolved and now it's the term that we use to represent what you do when a website requests more information from a server after the page has loaded.
+// we use AJAX to request data from an API,
+//but what we mean we say API in this context is it's a public server that will allow us to make AJAX calls and it will respond
+//Most big websites will have some sort of public API, like Twitter for example
