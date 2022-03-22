@@ -63,3 +63,16 @@ console.log(div.innerText, typeof div.innerText); // it's a string here
 // we use AJAX to request data from an API,
 //but what we mean we say API in this context is it's a public server that will allow us to make AJAX calls and it will respond
 //Most big websites will have some sort of public API, like Twitter for example
+
+
+// .then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise.
+
+const promise1 = new Promise((resolve, reject) => {
+  resolve('Success!');
+});
+
+promise1.then((value) => {
+  console.log(value);
+  // expected output: "Success!"
+});
+
