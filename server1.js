@@ -8,9 +8,11 @@ app.get("/", function(req, res) {
   res.end("Welcome to my site!");
 });
 
-app.get("/complement", function(req, res) {
+app.get("/complement", function(req, res) { //another route
   res.end("You look nice today");
 });
+
+// so ESSENTIALLY, a web server is nothing more than lots and lots of routes
 
 app.listen(3000);
 console.log("listening on http://localhost:3000");
